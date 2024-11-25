@@ -671,6 +671,98 @@ sehingga <img alt="image" src="https://hackmd.io/_uploads/BkWxYhxQke.png" /></p>
 </section>
 </section>
 
+</section>
+<section id="e-tugas-pembuktian">
+<h2>E. Tugas Pembuktian<a class="headerlink" href="#e-tugas-pembuktian" title="Link to this heading">#</a></h2>
+<p><img alt="image" src="https://hackmd.io/_uploads/ByvWcTk7ke.png" /></p>
+<section id="pembuktian-rumus-rumus-penjumlahan-summation-formula">
+<h3>Pembuktian Rumus-Rumus Penjumlahan (Summation Formula)<a class="headerlink" href="#pembuktian-rumus-rumus-penjumlahan-summation-formula" title="Link to this heading">#</a></h3>
+<section id="rumus-sum-k-0-n-ar-k-frac-ar-n-1-a-r-1-r-neq-1">
+<h4>1. Rumus <span class="math notranslate nohighlight">\(\sum_{k=0}^n ar^k = \frac{ar^{n+1} - a}{r-1}, \ r \neq 1\)</span><a class="headerlink" href="#rumus-sum-k-0-n-ar-k-frac-ar-n-1-a-r-1-r-neq-1" title="Link to this heading">#</a></h4>
+<p><strong>Pembuktian:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S = \sum_{k=0}^n ar^k \\
+  = a + ar + ar^2 + \cdots + ar^n.
+\end{split}\]</div>
+<p>Kalikan kedua sisi dengan <span class="math notranslate nohighlight">\(r\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+rS = ar + ar^2 + ar^3 + \cdots + ar^{n+1}.
+\]</div>
+<p>Kurangkan persamaan pertama dari yang kedua:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S - rS = a - ar^{n+1} \\
+S(1-r) = a(1-r^{n+1}) \\
+S = \frac{ar^{n+1} - a}{r-1}, \quad r \neq 1.
+\end{split}\]</div>
+</section>
+<section id="rumus-sum-k-1-n-k-frac-n-n-1-2">
+<h4>2. Rumus <span class="math notranslate nohighlight">\(\sum_{k=1}^n k = \frac{n(n+1)}{2}\)</span><a class="headerlink" href="#rumus-sum-k-1-n-k-frac-n-n-1-2" title="Link to this heading">#</a></h4>
+<p><strong>Pembuktian:</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S = \sum_{k=1}^n k \\
+  = 1 + 2 + 3 + \cdots + n.
+\end{split}\]</div>
+<p>Tuliskan kembali urutan secara terbalik:</p>
+<div class="math notranslate nohighlight">
+\[
+S = n + (n-1) + (n-2) + \cdots + 1.
+\]</div>
+<p>Jumlahkan dua barisan:</p>
+<div class="math notranslate nohighlight">
+\[
+2S = (1+n) + (2+(n-1)) + (3+(n-2)) + \cdots + (n+1).
+\]</div>
+<p>Setiap pasangan menghasilkan <span class="math notranslate nohighlight">\(n+1\)</span>, dan terdapat <span class="math notranslate nohighlight">\(n\)</span> pasangan. Maka:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+2S = n(n+1) \\
+S = \frac{n(n+1)}{2}.
+\end{split}\]</div>
+</section>
+<section id="rumus-sum-k-1-n-k-2-frac-n-n-1-2n-1-6">
+<h4>3. Rumus <span class="math notranslate nohighlight">\(\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}\)</span><a class="headerlink" href="#rumus-sum-k-1-n-k-2-frac-n-n-1-2n-1-6" title="Link to this heading">#</a></h4>
+<p><strong>Pembuktian (Induksi Matematika):</strong></p>
+<ul class="simple">
+<li><p><strong>Basis Induksi:</strong> Untuk <span class="math notranslate nohighlight">\(n=1\)</span>,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sum_{k=1}^1 k^2 = 1^2 = 1 \\
+\frac{1(1+1)(2\cdot 1 + 1)}{6} = \frac{1 \cdot 2 \cdot 3}{6} = 1.
+\end{split}\]</div>
+<p>Maka, rumus benar untuk <span class="math notranslate nohighlight">\(n=1\)</span>.</p>
+<ul class="simple">
+<li><p><strong>Hipotesis Induksi:</strong> Misalkan rumus benar untuk <span class="math notranslate nohighlight">\(n=m\)</span>, yaitu:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\sum_{k=1}^m k^2 = \frac{m(m+1)(2m+1)}{6}.
+\]</div>
+<ul class="simple">
+<li><p><strong>Langkah Induksi:</strong> Buktikan untuk <span class="math notranslate nohighlight">\(n=m+1\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sum_{k=1}^{m+1} k^2 = \sum_{k=1}^m k^2 + (m+1)^2 \\
+= \frac{m(m+1)(2m+1)}{6} + (m+1)^2.
+\end{split}\]</div>
+<p>Faktorkan <span class="math notranslate nohighlight">\(m+1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{m(m+1)(2m+1)}{6} + (m+1)^2 = \frac{(m+1)\left[m(2m+1) + 6(m+1)\right]}{6} \\
+= \frac{(m+1)(2m^2 + 7m + 6)}{6} \\
+= \frac{(m+1)(m+2)(2m+3)}{6}.
+\end{split}\]</div>
+<p>Maka, rumus benar untuk <span class="math notranslate nohighlight">\(n=m+1\)</span>.</p>
+<p>Oleh karena itu, rumus terbukti benar untuk semua <span class="math notranslate nohighlight">\(n \geq 1\)</span>.</p>
+</section>
+</section>
+</section>
+</section>
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
